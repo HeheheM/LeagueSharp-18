@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
@@ -375,8 +375,8 @@ namespace DevKogMaw
             if (mustDebug)
                 Game.PrintChat("InitializeAttachEvents Start");
 
-            Game.OnGameUpdate += OnTick;
-            Game.OnGameSendPacket += Game_OnGameSendPacket;
+            Game.OnUpdate += OnTick;
+            Game.OnSendPacket += Game_OnGameSendPacket;
             Game.OnWndProc += Game_OnWndProc;
             Drawing.OnDraw += OnDraw;
             AntiGapcloser.OnEnemyGapcloser += AntiGapcloser_OnEnemyGapcloser;
