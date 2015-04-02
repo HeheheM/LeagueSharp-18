@@ -1,4 +1,4 @@
-﻿using DevCommom;
+using DevCommom;
 using LeagueSharp;
 using LeagueSharp.Common;
 using System;
@@ -88,7 +88,7 @@ namespace DevKarma
 
         private static void InitializeAttachEvents()
         {
-            Game.OnGameUpdate += Game_OnGameUpdate;
+            Game.OnUpdate += Game_OnGameUpdate;
             Drawing.OnDraw += Drawing_OnDraw;
             AntiGapcloser.OnEnemyGapcloser += AntiGapcloser_OnEnemyGapcloser;
             Interrupter.OnPossibleToInterrupt += Interrupter_OnPossibleToInterrupt;
